@@ -5,6 +5,7 @@
 import autopartstestcases.*;
 import findastoretestcases.*;
 import footertestcases.Footer;
+import footertestcases.SiteMap;
 import footertestcases.SocialMediaLinks;
 import homepagetestcases.HomePage;
 import interchangepartstestcases.InterchangeablePartsInventory;
@@ -75,6 +76,9 @@ public class MainTest {
 ////======================================================================================================================
         Footer footerTests = new Footer();
         SocialMediaLinks socialMediaTest = new SocialMediaLinks();
+////======================================================================================================================
+        SiteMap siteMapTests = new SiteMap();
+////======================================================================================================================
 
         if (prefix.equals("stg")) {
             url = "https://stg.pullapart.com/";
@@ -107,7 +111,7 @@ public class MainTest {
 //        reviewsSMC.reviewsMainTest(driver);
 //        faqSMC.sellMyCarFAQMainTest(driver);
 //        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
-        getAQuoteSMC.getAQuotePageMainTest(driver);
+//        getAQuoteSMC.getAQuotePageMainTest(driver);
 //        smcLocationTest.smcLocationPagesMainTest(driver);
 //        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
 ////======================================================================================================================
@@ -121,8 +125,9 @@ public class MainTest {
 ////======================================================================================================================
 //        vipTest.vipMainTest(driver);
 ////======================================================================================================================
-//        footerTests.footerMainTest(driver);
+        footerTests.footerMainTest(driver);
 //        socialMediaTest.socialMediaLinksTest(driver);
+//        siteMapTests.sitMapMainTest(driver);
 ////======================================================================================================================
 //        returnHome(driver);
     }
