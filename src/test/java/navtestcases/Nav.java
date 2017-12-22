@@ -1014,15 +1014,15 @@ public class Nav {
         faqNavLink.get(7).click();
         try {
             actualTitle = driver.getTitle();
-            System.out.println("SellMyCarFAQ Link in Nav");
-            System.out.println("Expected:  SellMyCarFAQ");
+            System.out.println("FAQ Link in Nav");
+            System.out.println("Expected:  FAQ");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("SellMyCarFAQ", actualTitle);
+            assertEquals("FAQ", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("-----------------------------------------------------------------------------------");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
-            System.out.println(ANSI_RED + "SellMyCarFAQ link not verified, please check the website." + ANSI_RESET);
+            System.out.println(ANSI_RED + "FAQ link not verified, please check the website." + ANSI_RESET);
             System.out.println("-----------------------------------------------------------------------------------");
         }
     }
