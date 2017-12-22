@@ -114,8 +114,8 @@ public class MainTest {
 //        faqSMC.sellMyCarFAQMainTest(driver);
 //        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
 //        getAQuoteSMC.getAQuotePageMainTest(driver);
-//        smcLocationTest.smcLocationPagesMainTest(driver);
-        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
+        smcLocationTest.smcLocationPagesMainTest(driver);
+//        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
 ////======================================================================================================================
 ////        inventoryTest.searchInventoryMainTest(driver);
 ////======================================================================================================================
