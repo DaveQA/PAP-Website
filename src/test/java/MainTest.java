@@ -114,7 +114,7 @@ public class MainTest {
 //        faqSMC.sellMyCarFAQMainTest(driver);
 //        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
 //        getAQuoteSMC.getAQuotePageMainTest(driver);
-        smcLocationTest.smcLocationPagesMainTest(driver);
+//        smcLocationTest.smcLocationPagesMainTest(driver);
 //        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
 ////======================================================================================================================
 ////        inventoryTest.searchInventoryMainTest(driver);
@@ -129,7 +129,7 @@ public class MainTest {
 ////======================================================================================================================
 //        footerTests.footerMainTest(driver);
 //        socialMediaTest.socialMediaLinksTest(driver);
-//        siteMapTests.sitMapMainTest(driver);
+        siteMapTests.sitMapMainTest(driver);
 ////======================================================================================================================
 //        returnHome(driver);
     }
