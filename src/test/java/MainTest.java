@@ -32,12 +32,11 @@ public class MainTest {
 
     @BeforeClass
     public static void Browser() {
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dholliday\\Desktop\\Everything Selenium\\SeleniumDrivers\\ChromeDrivers\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "/Users/davidholliday1/Desktop/Test Case/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dholliday\\Desktop\\Everything Selenium\\SeleniumDrivers\\ChromeDrivers\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "/Users/davidholliday1/Desktop/Test Case/chromedriver");
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--start-maximized");
-//        options.addArguments("--window-size=1920,1080");
-        options.addArguments("--window-size=2000,2000");
+        options.addArguments("--start-maximized");
+//        options.addArguments("--window-size=2000,2000");
         driver = new ChromeDriver(options);
     }
 
@@ -95,19 +94,19 @@ public class MainTest {
         driver.get(url);
 //        navTests.navMainTests(driver);
 ////======================================================================================================================
-        homePageTest.homeMainTest(driver);
+//        homePageTest.homeMainTest(driver);
 ////======================================================================================================================
-        autoPartsActiveTests.autoPartsActiveMainTest(driver);
-        autoPartsTest.autoPartMainTest(driver);
-        howItWorksActiveTests.howItWorksActiveMainTest(driver);
-        howItWorksTest.howItWorksMainTest(driver);
-        newOnYardTest.SearchNewOnYardMainTest(driver);
-        newOnYardActiveTests.newOnYardActiveMainTest(driver);
-        searchCarInventoryTest.searchInventoryMainTest(driver);
-        searchCarInventoryActiveTests.notifyMeActiveMainTest(driver);
-        interchangeableSearchTests.interchangeablePartsInventoryMainTests(driver);
-        partsPricingTest.partsPricingMainTest(driver);
-        notifyMeTest.notifyMePageMainTest(driver);
+//        autoPartsActiveTests.autoPartsActiveMainTest(driver);
+//        autoPartsTest.autoPartMainTest(driver);
+//        howItWorksActiveTests.howItWorksActiveMainTest(driver);
+//        howItWorksTest.howItWorksMainTest(driver);
+//        newOnYardTest.SearchNewOnYardMainTest(driver);
+//        newOnYardActiveTests.newOnYardActiveMainTest(driver);
+//        searchCarInventoryTest.searchInventoryMainTest(driver);
+//        searchCarInventoryActiveTests.notifyMeActiveMainTest(driver);
+//        interchangeableSearchTests.interchangeablePartsInventoryMainTests(driver);
+//        partsPricingTest.partsPricingMainTest(driver);
+//        notifyMeTest.notifyMePageMainTest(driver);
 ////======================================================================================================================
 //        sellMyCarTest.sellMyCarMainTest(driver);
 //        howItWorksSMC.HowItWorksSellMyCarMainTest(driver);
@@ -116,7 +115,7 @@ public class MainTest {
 //        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
 //        getAQuoteSMC.getAQuotePageMainTest(driver);
 //        smcLocationTest.smcLocationPagesMainTest(driver);
-//        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
+        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
 ////======================================================================================================================
 ////        inventoryTest.searchInventoryMainTest(driver);
 ////======================================================================================================================

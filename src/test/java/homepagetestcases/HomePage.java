@@ -56,31 +56,42 @@ public class HomePage {
             System.out.println(ANSI_RED + "Home page not verified, please check the website." + ANSI_RESET);
             System.out.println("-----------------------------------------------------------------------------------");
         }
-        returnHome();
     }
 
     private void completeInventorySearch() {
         WebDriverWait wait = new WebDriverWait(driver, 15);
 
-        List<WebElement> options = driver.findElements(By.cssSelector(".select-block"));
-        for (int i = 0; i < options.size(); i++) {
-            WebElement elem = options.get(i);
-            elem.click();
-            if (i == 0) {
-                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            }
-            if (i == 1) {
-                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            }
-            if (i == 2) {
-                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
-                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            }
-        }
-        List<WebElement> carFromSingleLocationButton = driver.findElements(By.cssSelector(".red-box .button"));
-        carFromSingleLocationButton.get(2).click(); //Complete search
+        List<WebElement> makeDropDown = driver.findElements(By.cssSelector(".red-box input"));
+        makeDropDown.get(1).click();
+        List<WebElement> makeOption = driver.findElements(By.className(".red-box option"));
+        makeOption.get(0).click();
+        List<WebElement> modelDropDown = driver.findElements(By.cssSelector(".red-box.input"));
+        modelDropDown.get(3).click();
+        List<WebElement> modelOption = driver.findElements(By.className(".red-box.option"));
+        modelOption.get(25).click();
+        List<WebElement> yearDropDown = driver.findElements(By.cssSelector(".red-box.input"));
+        yearDropDown.get(5).click();
+        List<WebElement> yearOption = driver.findElements(By.className(".red-box.option"));
+        yearOption.get(107).click();
+
+//        for (int i = 0; i < options.size(); i++) {
+//            WebElement elem = options.get(i);
+//            elem.click();
+//            if (i == 0) {
+//                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
+//                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//            }
+//            if (i == 1) {
+//                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
+//                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//            }
+//            if (i == 2) {
+//                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
+//                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//            }
+//        }
+//        List<WebElement> carFromSingleLocationButton = driver.findElements(By.cssSelector(".red-box .button"));
+//        carFromSingleLocationButton.get(2).click(); //Complete search
 
         try {
             System.out.println("Inventory Search Title Test");
