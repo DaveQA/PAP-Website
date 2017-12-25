@@ -32,11 +32,13 @@ public class MainTest {
 
     @BeforeClass
     public static void Browser() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dholliday\\Desktop\\Everything Selenium\\SeleniumDrivers\\ChromeDrivers\\chromedriver.exe");
-//        System.setProperty("webdriver.chrome.driver", "/Users/davidholliday1/Desktop/Test Case/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dholliday\\Desktop\\Everything Selenium\\SeleniumDrivers\\ChromeDrivers\\chromedriver.exe");
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--start-maximized");
+//        driver = new ChromeDriver(options);
+        System.setProperty("webdriver.chrome.driver", "/Users/davidholliday1/Desktop/Test Case/chromedriver");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
-//        options.addArguments("--window-size=2000,2000");
+        options.addArguments("--window-size=2000,2000");
         driver = new ChromeDriver(options);
     }
 
