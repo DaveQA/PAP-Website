@@ -31,7 +31,6 @@ public class InterchangeablePartsInventory {
 
         try {
             System.out.println("Interchangeable Parts Search Tests");
-            System.out.println("-----------------------------------------------------------------------------------");
             System.out.println("===================================================================================");
             actualTitle = driver.getTitle();
             System.out.println("Expected:  Title is SEARCH INTERCHANGEABLE PARTS INVENTORY");
