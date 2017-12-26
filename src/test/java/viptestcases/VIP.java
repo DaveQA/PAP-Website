@@ -47,19 +47,19 @@ public class VIP {
 
         try {
             actualTitle = driver.getTitle();
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
             System.out.println("VIP Link in Top nav");
-            System.out.println("-----------------------------------------------------------------------------------");
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
+            System.out.println("===================================================================================");
             System.out.println("Expected:  VIP Club");
             System.out.println("Actual:    " + actualTitle);
             assertEquals("VIP Club", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "VIP link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -81,14 +81,14 @@ public class VIP {
                 modal = true;
                 Thread.sleep(1000);
                 System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-                System.out.println("-----------------------------------------------------------------------------------");
+                System.out.println("===================================================================================");
                 wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".login-overlay .button"))));
                 driver.findElement(By.cssSelector(".login-overlay .button")).click();
             } else {
                 if (i == 9) {
                     System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
                     System.out.println(ANSI_RED + "The failed login attempt did not work, please check the website." + ANSI_RESET);
-                    System.out.println("-----------------------------------------------------------------------------------");
+                    System.out.println("===================================================================================");
                 }
             }
             if (modal) {
@@ -106,7 +106,7 @@ public class VIP {
         if (driver.getCurrentUrl().contains("https://stg")) {
             cardNumber = "1000682317";
             loginVIPPassword = "password";
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
             inputs.get(0).sendKeys(Keys.chord(Keys.CONTROL, "a"), cardNumber);
             inputs.get(1).sendKeys(loginVIPPassword);
             yellowButton.get(10).click();
@@ -115,7 +115,7 @@ public class VIP {
         } else if (driver.getCurrentUrl().contains("https://uat")) {
             cardNumber = "000412182";
             loginVIPPassword = "password";
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
             inputs.get(0).sendKeys(Keys.chord(Keys.CONTROL, "a"), cardNumber);
             inputs.get(1).sendKeys(loginVIPPassword);
             yellowButton.get(10).click();
@@ -124,7 +124,7 @@ public class VIP {
         } else if (driver.getCurrentUrl().contains("https://www")) {
             cardNumber = "1000577033";
             loginVIPPassword = "password";
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
             inputs.get(0).sendKeys(Keys.chord(Keys.CONTROL, "a"), cardNumber);
             inputs.get(1).sendKeys(loginVIPPassword);
             yellowButton.get(10).click();
@@ -146,11 +146,11 @@ public class VIP {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("VIP Club Dashboard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "VIP Club Dashboard page not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -162,11 +162,11 @@ public class VIP {
         if (driver.findElement(By.cssSelector(".vip-button")).isDisplayed()) { //If the selector is wrong then the test bombs out, this will need to be updated manually
             System.out.println("Wallet sub-nav link working correctly.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Wallet link not working, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -176,11 +176,11 @@ public class VIP {
         if (driver.getPageSource().contains("Shopping list coming soon")) {
             System.out.println("Shopping List sub-nav link working correctly.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Shopping List sub-nav link not working, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
 
         jse.executeScript("window.scrollBy(0,-1000)", "");
@@ -189,11 +189,11 @@ public class VIP {
         if (driver.getPageSource().contains("Message Center")) {
             System.out.println("Message Center sub-nav link working correctly.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Message Center sub-nav link not working, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
 
         jse.executeScript("window.scrollBy(0,-1000)", "");
@@ -221,11 +221,11 @@ public class VIP {
             assertEquals(vipInfoResult, updatedVIPInfo.get(2).getAttribute("innerText"));
             System.out.println(vipInfoResult + " was entered.  VIP info was updated.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "VIP info was not update, please check the website." + ANSI_RED);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -242,11 +242,11 @@ public class VIP {
             driver.findElements(By.cssSelector(".container-fluid vip profile"));
             System.out.println("Change Store button is linked as intended.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Link not working, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -258,11 +258,11 @@ public class VIP {
         if (vipClubLink.get(0).getAttribute("class").contains("active")) {
             System.out.println("VIP Club link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "VIP Club link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         scrollUp();
     }
@@ -276,11 +276,11 @@ public class VIP {
         if (vipWalletLink.get(1).getAttribute("class").contains("active")) {
             System.out.println("VIP Wallet link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "VIP Wallet link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         scrollUp();
     }
@@ -292,11 +292,11 @@ public class VIP {
         if (shoppingListLink.get(2).getAttribute("class").contains("active")) {
             System.out.println("Shopping List link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Shopping List link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         scrollUp();
     }
@@ -308,11 +308,11 @@ public class VIP {
         if (messageCentertLink.get(3).getAttribute("class").contains("active")) {
             System.out.println("Message Center link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Message Center link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         scrollUp();
     }

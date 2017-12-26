@@ -37,11 +37,11 @@ public class UsedCarLocationPages {
         if (autoPartsLink.get(5).getAttribute("class").contains("active")) {
             System.out.println("Used Car link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Used Car link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -56,15 +56,15 @@ public class UsedCarLocationPages {
                 System.out.println("Actual:    " + actualTitle);
                 assertEquals("Akron Used Cars Listing", actualTitle);
                 System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-                System.out.println("-----------------------------------------------------------------------------------");
+                System.out.println("===================================================================================");
             } catch (AssertionError e) {
                 System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
                 System.out.println(ANSI_RED + "Akron Used Car Listing page not verified, please check the website." + ANSI_RESET);
-                System.out.println("-----------------------------------------------------------------------------------");
+                System.out.println("===================================================================================");
             }
         }else{
             System.out.println("This location does not have any used cars to view");
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToUsedCarLandingPage();
     }
@@ -90,11 +90,11 @@ public class UsedCarLocationPages {
             System.out.println("Actual:    " + actualTitle);
             Assertions.assertEquals("4473 Tilly Mill Rd, Doraville, GA 30360 to 1250 Kelly Ave, Akron, OH 44306 - Google Maps", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Google Map link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         driver.close();
         driver.switchTo().window(browserTabs.get(0));
