@@ -55,9 +55,9 @@ public class MainTest {
 
     public void WebsiteTest() throws InterruptedException {
         Nav navTests = new Nav();
-////======================================================================================================================
+//======================================================================================================================
         HomePage homePageTest = new HomePage();
-////======================================================================================================================
+//======================================================================================================================
         AutoParts autoPartsTest = new AutoParts();
         AutoPartsSubNavActiveFlag autoPartsActiveTests = new AutoPartsSubNavActiveFlag();
         HowItWorks howItWorksTest = new HowItWorks();
@@ -69,7 +69,7 @@ public class MainTest {
         NewOnYard newOnYardTest = new NewOnYard();
         NewOnYardSubNavActiveFlag newOnYardActiveTests = new NewOnYardSubNavActiveFlag();
         NotifyMe notifyMeTest = new NotifyMe();
-////======================================================================================================================
+//======================================================================================================================
         SellMyCar sellMyCarTest = new SellMyCar();
         HowItWorksSellMyCar howItWorksSMC = new HowItWorksSellMyCar();
         Reviews reviewsSMC = new Reviews();
@@ -78,20 +78,20 @@ public class MainTest {
         GetAQuotePage getAQuoteSMC = new GetAQuotePage();
         LocationCityPages smcLocationTest = new LocationCityPages();
         PopularMakesPages smcPopularMakesTest = new PopularMakesPages();
-////======================================================================================================================
+//======================================================================================================================
         FindAStoreSearch findAStoreTest = new FindAStoreSearch();
         FindAStoreLocationPageLinks locationLinksTest = new FindAStoreLocationPageLinks();
-////======================================================================================================================
+//======================================================================================================================
         VIP vipTest = new VIP();
-////======================================================================================================================
+//======================================================================================================================
         UsedCar usedCarTest = new UsedCar();
         UsedCarLocationPages usedCarLocationPageTest = new UsedCarLocationPages();
-////======================================================================================================================
+//======================================================================================================================
         Footer footerTests = new Footer();
         SocialMediaLinks socialMediaTest = new SocialMediaLinks();
-////======================================================================================================================
+//======================================================================================================================
         SiteMap siteMapTests = new SiteMap();
-////======================================================================================================================
+//======================================================================================================================
 
         if (prefix.equals("stg")) {
             url = "https://stg.pullapart.com/";
