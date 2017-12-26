@@ -55,7 +55,6 @@ public class SearchCarInventory {
         driver.findElement(By.cssSelector(".button.yellow.ng-binding")).click(); //Complete search
 
         try {
-            System.out.println("===================================================================================");
             System.out.println("Inventory Search Title Test");
             System.out.println("===================================================================================");
             System.out.println("===================================================================================");
