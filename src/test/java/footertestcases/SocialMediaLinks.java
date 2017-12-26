@@ -45,11 +45,11 @@ public class SocialMediaLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part - Home | Facebook", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "FaceBook link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         driver.close();
         driver.switchTo().window(browserTabs.get(0));
@@ -73,11 +73,11 @@ public class SocialMediaLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part (@PullAPartAuto) | Twitter", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Twitter link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         driver.close();
         driver.switchTo().window(browserTabs.get(0));
@@ -101,11 +101,11 @@ public class SocialMediaLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part (@pullapartauto) • Instagram photos and videos", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Instagram link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         driver.close();
         driver.switchTo().window(browserTabs.get(0));
@@ -129,11 +129,11 @@ public class SocialMediaLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part - YouTube - YouTube", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "YouTube link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         driver.close();
         driver.switchTo().window(browserTabs.get(0));

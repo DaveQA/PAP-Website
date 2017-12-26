@@ -47,11 +47,11 @@ public class Footer {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Do-It-Yourself Salvage Yard | We Buy Junk Cars", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "About link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -67,11 +67,11 @@ public class Footer {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Careers", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Careers link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -87,11 +87,11 @@ public class Footer {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Price List: Low Prices for Auto Salvage Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Pricing link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -107,11 +107,11 @@ public class Footer {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Inventory Search: Inventory Car Parts Search", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Inventory link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -127,11 +127,11 @@ public class Footer {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Un-Junkyard: Auto Salvage Yard Locations & Hours", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Locations link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -147,11 +147,11 @@ public class Footer {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("SellMyCarFAQ Category", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Contact link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -167,11 +167,11 @@ public class Footer {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Cash for Junk Cars: Sell Your Junk Car for Cash | Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Sell My Car link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -187,11 +187,11 @@ public class Footer {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Privacy Policy", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Privacy Policy link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -207,11 +207,11 @@ public class Footer {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sitemap", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "SiteMap link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 

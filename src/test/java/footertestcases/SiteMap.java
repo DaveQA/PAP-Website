@@ -6,7 +6,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class SiteMap {
 
@@ -38,7 +37,7 @@ public class SiteMap {
             links[i] = linkSize.get(i).getAttribute("href");
 //            System.out.println(linksize.get(i).getAttribute("href"));
         }
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
         System.out.println("Checking site for testing data...");
         for(int i=0;i<linksCount;i++)
         {
@@ -50,7 +49,7 @@ public class SiteMap {
             }
         }
         System.out.println("Finished checking all links on the site map page.");
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
     }
 
     private void goToSiteMapPage(WebDriver driver1){
