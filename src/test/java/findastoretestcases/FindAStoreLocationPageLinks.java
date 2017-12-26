@@ -59,11 +59,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Un-Junkyard: Used Auto Parts in Birmingham", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Birmingham link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -81,11 +81,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Used Auto Parts, Salvage & Un-Junkyard in Mobile", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Birmingham link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -103,11 +103,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Montgomery Used Auto Parts & Salvage Yard Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Montgomery link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -125,11 +125,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Auto Salvage Tucson: Un-Junkyard & Used Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Tucson link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -147,11 +147,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Used Auto Parts & Salvage Yard in Lithonia", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Atlanta East link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -169,11 +169,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Un-Junkyard: Norcross Used Auto Parts & Salvage", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Atlanta North link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -191,11 +191,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Used Auto Parts: Car Parts Un-Junkyard in Atlanta", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Atlanta South link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -213,11 +213,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Augusta Salvage Yard: Used Parts & Auto Salvage", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Augusta link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -235,11 +235,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Indianapolis Un-Junkyard & Used Auto Salvage Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Indianapolis link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -257,11 +257,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Salvage: Used Auto Parts Un-Junkyard in Louisville", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Louisville link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -279,11 +279,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Baton Rouge Used Auto Parts & Auto Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Baton Rouge link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -301,11 +301,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Salvage Yard & Used Auto Parts in Lafayette", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Lafayette link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -323,11 +323,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Used Auto Parts & Salvage Yard in New Orleans", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "New Orleans link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -345,11 +345,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Used Auto Parts & Auto Salvage Yard in Jackson", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Jackson link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -367,11 +367,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Auto Un-Junkyards: Charlotte Used Auto Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Charlotte link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -389,11 +389,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Un-Junkyard: Used Auto Parts & Salvage Car Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Winston Salem link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -411,11 +411,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Used Car Parts & Akron Auto Salvage Un-Junkyard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Akron link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -433,11 +433,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Un-Junkyard: Canton Auto Salvage & Used Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Canton link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -455,11 +455,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Cleveland: Used Auto Parts & Car Un-Junkyard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Cleveland West link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -477,11 +477,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Used Auto Parts & Un-Junkyard in Columbia", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Columbia link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -499,11 +499,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Un-Junkyard: Knoxville Used Auto Salvage Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Knoxville link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -521,11 +521,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Auto Salvage Yards: Used Auto Parts Memphis", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Memphis link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -543,11 +543,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Un-Junkyards: Used Auto & Car Parts Nashville", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Nashville link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -565,11 +565,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Salvage Yard & Used Auto Parts in Corpus Christi", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Corpus Christi link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }
@@ -587,11 +587,11 @@ public class FindAStoreLocationPageLinks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part: El Paso Junk Car Parts & Auto Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "El Paso link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToFindAStorePage();
     }

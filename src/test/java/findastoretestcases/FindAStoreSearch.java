@@ -37,11 +37,11 @@ public class FindAStoreSearch {
         if (driver.findElements(By.className("padding-10")).size() != 0) {
             System.out.println("Find A Store Search completed");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println("Find A Store search did not finish, please check the website.");
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -62,11 +62,11 @@ public class FindAStoreSearch {
         if (noLocationText.get(2).getAttribute("innerHTML").equals("No locations found.")) {
             System.out.println("Out of range search zip code search completed");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println("Find A Store search did not finish, please check the website.");
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 }
