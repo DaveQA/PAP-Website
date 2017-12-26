@@ -22,10 +22,10 @@ public class SellMyCar {
         driver = driver1;
 
         driver.findElement(By.cssSelector(".nav > div:nth-child(2)")).click();
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
         System.out.println("Sell My Car Page Tests");
-        System.out.println("-----------------------------------------------------------------------------------");
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
+        System.out.println("===================================================================================");
 
         try {
             actualTitle = driver.getTitle();
@@ -34,11 +34,11 @@ public class SellMyCar {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Cash for Junk Cars: Sell Your Junk Car for Cash | Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Sell My Car link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -54,11 +54,11 @@ public class SellMyCar {
             phoneNumber.isDisplayed();
             System.out.println("Zip Code search finished.");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (Exception e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Zip code look up did not complete, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 }

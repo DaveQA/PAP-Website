@@ -30,10 +30,10 @@ public class HowItWorksSellMyCar {
         String actualTitle;
         goToHowItWorksPage(driver1);
 
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
         System.out.println("How it Works Page");
-        System.out.println("-----------------------------------------------------------------------------------");
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
+        System.out.println("===================================================================================");
 
         try {
             actualTitle = driver.getTitle();
@@ -42,11 +42,11 @@ public class HowItWorksSellMyCar {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Learn How to Sell a Junk Car for Cash with Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "How It Works link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -84,11 +84,11 @@ public class HowItWorksSellMyCar {
                 System.out.println("Email was sent to the Car Buy Pull-A-Part email account, confirm email was sent.");
             }
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "The Get A Quote form was not submitted, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         goToHowItWorksPage(driver);
     }
@@ -113,11 +113,11 @@ public class HowItWorksSellMyCar {
         if (zipCodeBoxSubtitle.get(2).isDisplayed()) {
             System.out.println("In Of Area Zip Code lookup completed");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Zip Code lookup did not complete, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -136,11 +136,11 @@ public class HowItWorksSellMyCar {
         if (zipCodeBoxSubtitle.get(3).isDisplayed()) {
             System.out.println("Out Of Area Zip Code lookup completed");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Zip Code lookup did not complete, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 

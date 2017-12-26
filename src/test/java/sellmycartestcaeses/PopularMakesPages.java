@@ -75,11 +75,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Get Fast Cash for Your Junk Acura at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Acura link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         acuraMakeGetAQuoteForm();
         zipCodeBoxInAreaLookUp();
@@ -104,11 +104,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Junk BMW: Get Cash for a BMW at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "BMW link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -130,11 +130,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell a Junk Buick for Top Dollar with Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Buick link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -156,11 +156,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("We Buy Junk Cadillacs: Sell Your Cadillac at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Cadillac link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -182,11 +182,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Get Fast Cash for Your Junk Chevy at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Chevy link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -208,11 +208,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Get Fast Cash for Your Junk Chrysler at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Chrysler link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -234,11 +234,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell a Junk Daewoo for Top Dollar with Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Daewoo link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -260,11 +260,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell a Junk Datsun for Top Dollar with Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Datsun link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -286,11 +286,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Dodge: Pull-A-Part Buys Junk Dodges for Cash", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Dodge link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -312,11 +312,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Get Fast Cash for Your Junk Eagle at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Eagle link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -338,11 +338,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Get Fast Cash for Your Junk Ford at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Ford link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -364,11 +364,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("We Buy Junk GMCs: Sell Your GMC at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "GMC link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -390,11 +390,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Junk Honda: Get Cash for a Honda at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Honda link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -416,11 +416,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Get Fast Cash for Your Junk Hyundai at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Hyundai link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -442,11 +442,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Isuzu: Pull-A-Part Buys Junk Isuzus for Cash", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Isuzu link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -468,11 +468,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Jeep: Pull-A-Part Buys Junk Jeeps for Cash", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Jeep link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -494,11 +494,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Junk Lexus: Get Cash for a Lexus at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Lexus link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -520,11 +520,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("We Buy Junk Lincolns: Sell Your Lincoln at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Lincoln link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -546,11 +546,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Junk Mazda: Get Cash for a Mazda at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Mazda link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -572,11 +572,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Mercury: Pull-A-Part Buys Junk Mercurys for Cash", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Mercury link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -598,11 +598,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("We Buy Junk MGs: Sell Your MG at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "MG link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -624,11 +624,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("We Buy Junk Mitsubishis: Sell Your Mitsubishi at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Mitsubushi link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -650,11 +650,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell a Junk Nissan for Top Dollar with Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Nissan link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -676,11 +676,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Get Fast Cash for Your Junk Peugeot at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Peugeot link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -702,11 +702,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell a Junk Plymouth for Top Dollar with Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Plymouth link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -728,11 +728,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Junk Pontiac: Get Cash for a Pontiac at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Pontiac link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -754,11 +754,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("We Buy Junk Renaults: Sell Your Renault at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Renault link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -780,11 +780,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Get Fast Cash for Your Junk Saturn at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Saturn link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -806,11 +806,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell a Junk Sterling for Top Dollar with Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Sterling link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -832,11 +832,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell Your Subaru: Pull-A-Part Buys Junk Subarus for Cash", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Subaru link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -858,11 +858,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell a Junk Toyota for Top Dollar with Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Toyota link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -884,11 +884,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("We Buy Junk Volkswagens: Sell Your Volkswagen at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Volkswagen link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -910,11 +910,11 @@ public class PopularMakesPages {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Sell a Junk Volvo for Top Dollar with Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Volvo link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -959,11 +959,11 @@ public class PopularMakesPages {
                 System.out.println("Email was sent to the Car Buy Pull-A-Part email account, confirm email was sent.");
             }
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "The Get A Quote form was not submitted, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         scrollToLocationList(driver);
         List<WebElement> acuraLink = driver.findElements(By.cssSelector(".bottom-links li a"));
@@ -992,11 +992,11 @@ public class PopularMakesPages {
         if (zipCodeBoxSubtitle.get(2).isDisplayed()) {
             System.out.println("In Of Area Zip Code lookup completed");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Zip Code lookup did not complete, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -1015,11 +1015,11 @@ public class PopularMakesPages {
         if (zipCodeBoxSubtitle.get(3).isDisplayed()) {
             System.out.println("Out Of Area Zip Code lookup completed");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Zip Code lookup did not complete, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 }
