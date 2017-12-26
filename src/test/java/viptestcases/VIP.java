@@ -99,7 +99,7 @@ public class VIP {
     }
 
     private void successfulLoginAttempt() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
         List<WebElement> inputs = driver.findElements(By.cssSelector(".vip-form .input"));//List of the input fields on the login screen
         List<WebElement> yellowButton = driver.findElements(By.cssSelector(".button"));//List of the buttons on the login screen
 

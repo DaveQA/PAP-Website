@@ -10,6 +10,7 @@ import footertestcases.SocialMediaLinks;
 import homepagetestcases.HomePage;
 import interchangepartstestcases.InterchangeablePartsInventory;
 import navtestcases.Nav;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import sellmycartestcaeses.*;
 import usedcarstestcases.*;
@@ -102,43 +103,43 @@ public class MainTest {
         if (debug)
             System.out.println(url);
         driver.get(url);
-        navTests.navMainTests(driver);
+//        navTests.navMainTests(driver);
+////======================================================================================================================
+//        homePageTest.homeMainTest(driver);
+////======================================================================================================================
+//        autoPartsActiveTests.autoPartsActiveMainTest(driver);
+//        autoPartsTest.autoPartMainTest(driver);
+//        howItWorksActiveTests.howItWorksActiveMainTest(driver);
+//        howItWorksTest.howItWorksMainTest(driver);
+//        newOnYardTest.SearchNewOnYardMainTest(driver);
+//        newOnYardActiveTests.newOnYardActiveMainTest(driver);
+//        searchCarInventoryTest.searchInventoryMainTest(driver);
+//        searchCarInventoryActiveTests.notifyMeActiveMainTest(driver);
+//        interchangeableSearchTests.interchangeablePartsInventoryMainTests(driver);
+//        partsPricingTest.partsPricingMainTest(driver);
+//        notifyMeTest.notifyMePageMainTest(driver);
+////======================================================================================================================
+//        sellMyCarTest.sellMyCarMainTest(driver);
+//        howItWorksSMC.HowItWorksSellMyCarMainTest(driver);
+//        reviewsSMC.reviewsMainTest(driver);
+//        faqSMC.sellMyCarFAQMainTest(driver);
+//        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
+//        getAQuoteSMC.getAQuotePageMainTest(driver);
+//        smcLocationTest.smcLocationPagesMainTest(driver);
+//        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
+////======================================================================================================================
+////        inventoryTest.searchInventoryMainTest(driver);
+////======================================================================================================================
+//        findAStoreTest.findAStoreMainTest(driver);
+//        locationLinksTest.findAStoreLocationPageLinksMainTest(driver);
+////======================================================================================================================
+//        usedCarTest.usedCarMainTest(driver);
+//        usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
 //======================================================================================================================
-        homePageTest.homeMainTest(driver);
-//======================================================================================================================
-        autoPartsActiveTests.autoPartsActiveMainTest(driver);
-        autoPartsTest.autoPartMainTest(driver);
-        howItWorksActiveTests.howItWorksActiveMainTest(driver);
-        howItWorksTest.howItWorksMainTest(driver);
-        newOnYardTest.SearchNewOnYardMainTest(driver);
-        newOnYardActiveTests.newOnYardActiveMainTest(driver);
-        searchCarInventoryTest.searchInventoryMainTest(driver);
-        searchCarInventoryActiveTests.notifyMeActiveMainTest(driver);
-        interchangeableSearchTests.interchangeablePartsInventoryMainTests(driver);
-        partsPricingTest.partsPricingMainTest(driver);
-        notifyMeTest.notifyMePageMainTest(driver);
-//======================================================================================================================
-        sellMyCarTest.sellMyCarMainTest(driver);
-        howItWorksSMC.HowItWorksSellMyCarMainTest(driver);
-        reviewsSMC.reviewsMainTest(driver);
-        faqSMC.sellMyCarFAQMainTest(driver);
-        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
-        getAQuoteSMC.getAQuotePageMainTest(driver);
-        smcLocationTest.smcLocationPagesMainTest(driver);
-        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
-//======================================================================================================================
-//        inventoryTest.searchInventoryMainTest(driver);
-//======================================================================================================================
-        findAStoreTest.findAStoreMainTest(driver);
-        locationLinksTest.findAStoreLocationPageLinksMainTest(driver);
-//======================================================================================================================
-        usedCarTest.usedCarMainTest(driver);
-        usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
-//======================================================================================================================
-        vipTest.vipMainTest(driver);
-//======================================================================================================================
-        footerTests.footerMainTest(driver);
-        socialMediaTest.socialMediaLinksTest(driver);
+//        vipTest.vipMainTest(driver);
+////======================================================================================================================
+//        footerTests.footerMainTest(driver);
+//        socialMediaTest.socialMediaLinksTest(driver);
         siteMapTests.sitMapMainTest(driver);
 //======================================================================================================================
         returnHome(driver);
@@ -146,6 +147,7 @@ public class MainTest {
 
     private void returnHome(WebDriver driver1) {
         driver = driver1;
+        ((JavascriptExecutor) driver).executeScript("javascript: setTimeout(\"history.go(-1)\", 2000)");
         driver.findElement(By.className("logo")).click();
     }
 
