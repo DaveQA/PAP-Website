@@ -41,15 +41,15 @@ public class NewOnYard {
         action.moveToElement(autoParts.get(0)).moveToElement(autoParts.get(3)).click().build().perform();
 
         actualTitle = driver.getTitle();
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
         System.out.println("New on Yard Test");
-        System.out.println("-----------------------------------------------------------------------------------");
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
+        System.out.println("===================================================================================");
         System.out.println("Expected:  Title is Search Pull-A-Part's New Inventory for New on Yard Cars & Parts");
         System.out.println("Actual:    Title is " + actualTitle);
         assertEquals("Search Pull-A-Part's New Inventory for New on Yard Cars & Parts", actualTitle);
         System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
     }
 
     private void completeNewOnYardSearch24HourOption() {
@@ -64,11 +64,11 @@ public class NewOnYard {
 
         if (driver.findElements(By.cssSelector(".brandin-is-awesome")).size() != 0) {
             System.out.println(ANSI_GREEN + "New on Yard search using 24 Hours option" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "The New on Yard search did not finish, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage();
     }
@@ -86,11 +86,11 @@ public class NewOnYard {
 
         if (driver.findElements(By.cssSelector(".brandin-is-awesome")).size() != 0) {
             System.out.println(ANSI_GREEN + "New on Yard search using 48 Hours option" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "The New on Yard search did not finish, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage();
     }
@@ -108,11 +108,11 @@ public class NewOnYard {
 
         if (driver.findElements(By.cssSelector(".brandin-is-awesome")).size() != 0) {
             System.out.println(ANSI_GREEN + "New on Yard search using 7 Days option" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "The New on Yard search did not finish, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage();
     }
@@ -128,11 +128,11 @@ public class NewOnYard {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Inventory Search: Inventory Car Parts Search", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Sign up to be notified link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage();
     }
@@ -148,11 +148,11 @@ public class NewOnYard {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("SEARCH INTERCHANGEABLE PARTS INVENTORY", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Sign up to be notified link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage();
     }
@@ -174,11 +174,11 @@ public class NewOnYard {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Notify Me: Pull-A-Part Car Alert & Notification Service", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Sign up to be notified link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage();
     }
@@ -203,11 +203,11 @@ public class NewOnYard {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Un-Junkyard: Auto Salvage Yard Locations & Hours", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Sign up to be notified link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage();
     }
@@ -232,11 +232,11 @@ public class NewOnYard {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("SEARCH INTERCHANGEABLE PARTS INVENTORY", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Parts Interchange link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage();
     }
@@ -261,11 +261,11 @@ public class NewOnYard {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Inventory Search: Inventory Car Parts Search", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Inventory Search link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage();
     }

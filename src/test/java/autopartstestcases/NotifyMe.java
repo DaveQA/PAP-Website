@@ -47,11 +47,11 @@ public class NotifyMe {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Notify Me: Pull-A-Part Car Alert & Notification Service", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Notify Me page did not load, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -117,11 +117,11 @@ public class NotifyMe {
 
         if (driver.findElements(By.cssSelector(".padding-10")).size() != 0) {
             System.out.println(ANSI_GREEN + "New on Yard results are displayed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "The Notify Me form was not submitted, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -139,11 +139,11 @@ public class NotifyMe {
             System.out.println("Actual:    " + actualTitle);
             Assert.assertEquals("Used Auto Parts: Find Used Car Parts Near You at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Auto Parts link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage(driver1);
 //How It Works Widget Link
@@ -155,11 +155,11 @@ public class NotifyMe {
             System.out.println("Actual:    " + actualTitle);
             Assert.assertEquals("How It Works", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "How It Works link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage(driver1);
 //New On Yard Widget Link
@@ -174,11 +174,11 @@ public class NotifyMe {
             System.out.println("Actual:    " + actualTitle);
             Assert.assertEquals("Search Pull-A-Part's New Inventory for New on Yard Cars & Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "New On Yard link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage(driver1);
 //Search Car Inventory
@@ -194,11 +194,11 @@ public class NotifyMe {
             System.out.println("Actual:    " + actualTitle);
             Assert.assertEquals("Pull-A-Part Inventory Search: Inventory Car Parts Search", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Search Car Inventory link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage(driver1);
 //Part Pricing
@@ -214,11 +214,11 @@ public class NotifyMe {
             System.out.println("Actual:    " + actualTitle);
             Assert.assertEquals("Pull-A-Part Price List: Low Prices for Auto Salvage Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Parts Pricing link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToPage(driver1);
     }

@@ -32,10 +32,10 @@ public class HowItWorks {
 
         Actions action = new Actions(driver);
         action.moveToElement(autoParts.get(0)).moveToElement(autoParts.get(2)).click().build().perform();
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
         System.out.println("How It Works Page Tests");
-        System.out.println("-----------------------------------------------------------------------------------");
-        System.out.println("-----------------------------------------------------------------------------------");
+        System.out.println("===================================================================================");
+        System.out.println("===================================================================================");
         try {
             actualTitle = driver.getTitle();
             System.out.println("How It Works Link in Nav");
@@ -43,11 +43,11 @@ public class HowItWorks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("How It Works", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "How It Works link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -62,11 +62,11 @@ public class HowItWorks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Used Auto Parts: Find Used Car Parts Near You at Pull-A-Part", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Auto Parts link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToHowItWorksPage();
     }
@@ -82,11 +82,11 @@ public class HowItWorks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Search Pull-A-Part's New Inventory for New on Yard Cars & Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "New On Yard link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToHowItWorksPage();
     }
@@ -108,11 +108,11 @@ public class HowItWorks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Inventory Search: Inventory Car Parts Search", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Search Car Inventory link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToHowItWorksPage();
     }
@@ -134,11 +134,11 @@ public class HowItWorks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Pull-A-Part Price List: Low Prices for Auto Salvage Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Parts Pricing link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToHowItWorksPage();
     }
@@ -160,11 +160,11 @@ public class HowItWorks {
             System.out.println("Actual:    " + actualTitle);
             assertEquals("Notify Me: Pull-A-Part Car Alert & Notification Service", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Notify Me link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToHowItWorksPage();
     }

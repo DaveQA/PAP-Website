@@ -55,31 +55,31 @@ public class SearchCarInventory {
         driver.findElement(By.cssSelector(".button.yellow.ng-binding")).click(); //Complete search
 
         try {
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
             System.out.println("Inventory Search Title Test");
-            System.out.println("-----------------------------------------------------------------------------------");
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
+            System.out.println("===================================================================================");
             actualTitle = driver.getTitle();
             System.out.println("Expected:  Title is Pull-A-Part Advanced Used Car Parts Search: Search by Year");
             System.out.println("Actual:    Title is " + actualTitle);
             assertEquals("Pull-A-Part Advanced Used Car Parts Search: Search by Year", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Inventory Search page did not load, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         //Checking for the Thank you box that shows after a search is completed
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.className("padding-10"))));
         if (driver.findElements(By.id("Results")).size() != 0) {
             System.out.println("Inventory Search completed");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Inventory Search did not finish, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnToSearchCarInventoryPage();
     }

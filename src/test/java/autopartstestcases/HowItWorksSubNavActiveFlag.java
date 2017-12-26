@@ -35,11 +35,11 @@ public class HowItWorksSubNavActiveFlag {
         if (autoPartsLink.get(0).getAttribute("class").contains("active")) {
             System.out.println("Auto Parts link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Auto parts link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -52,11 +52,11 @@ public class HowItWorksSubNavActiveFlag {
         if (howItWorksLink.get(1).getAttribute("class").contains("active")) {
             System.out.println("How it Works link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "How it Works link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -69,11 +69,11 @@ public class HowItWorksSubNavActiveFlag {
         if (newOnYardLink.get(2).getAttribute("class").contains("active")) {
             System.out.println("New on Yard link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "New on Yard link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -86,11 +86,11 @@ public class HowItWorksSubNavActiveFlag {
         if (searchCarInventoryLink.get(3).getAttribute("class").contains("active")) {
             System.out.println("Search Car Inventory link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Search Car Inventory link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -103,11 +103,11 @@ public class HowItWorksSubNavActiveFlag {
         if (partsPricingLink.get(4).getAttribute("class").contains("active")) {
             System.out.println("Parts Pricing link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "New on Yard link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
@@ -120,11 +120,11 @@ public class HowItWorksSubNavActiveFlag {
         if (notifyMeLink.get(5).getAttribute("class").contains("active")) {
             System.out.println("New on Yard link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "New on Yard link is not active, please check the website" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
