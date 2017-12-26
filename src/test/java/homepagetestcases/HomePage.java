@@ -50,48 +50,49 @@ public class HomePage {
             System.out.println("Actual:    Title is " + actualTitle);
             assertEquals("Cash for Junk Cars & Used Parts: Pull-A-Part Auto Salvage", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Home page not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
     private void completeInventorySearch() {
         WebDriverWait wait = new WebDriverWait(driver, 15);
 
-        List<WebElement> makeDropDown = driver.findElements(By.cssSelector(".red-box input"));
-        makeDropDown.get(1).click();
-        List<WebElement> makeOption = driver.findElements(By.className(".red-box option"));
-        makeOption.get(0).click();
-        List<WebElement> modelDropDown = driver.findElements(By.cssSelector(".red-box.input"));
-        modelDropDown.get(3).click();
-        List<WebElement> modelOption = driver.findElements(By.className(".red-box.option"));
-        modelOption.get(25).click();
-        List<WebElement> yearDropDown = driver.findElements(By.cssSelector(".red-box.input"));
-        yearDropDown.get(5).click();
-        List<WebElement> yearOption = driver.findElements(By.className(".red-box.option"));
-        yearOption.get(107).click();
+//        List<WebElement> makeDropDown = driver.findElements(By.cssSelector(".red-box input"));
+//        makeDropDown.get(1).click();
+//        List<WebElement> makeOption = driver.findElements(By.cssSelector(".red-box option"));
+//        makeOption.get(0).click();
+//        List<WebElement> modelDropDown = driver.findElements(By.cssSelector(".red-box.input"));
+//        modelDropDown.get(3).click();
+//        List<WebElement> modelOption = driver.findElements(By.cssSelector(".red-box.option"));
+//        modelOption.get(25).click();
+//        List<WebElement> yearDropDown = driver.findElements(By.cssSelector(".red-box.input"));
+//        yearDropDown.get(5).click();
+//        List<WebElement> yearOption = driver.findElements(By.cssSelector(".red-box.option"));
+//        yearOption.get(107).click();
 
-//        for (int i = 0; i < options.size(); i++) {
-//            WebElement elem = options.get(i);
-//            elem.click();
-//            if (i == 0) {
-//                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
-//                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//            }
-//            if (i == 1) {
-//                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
-//                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//            }
-//            if (i == 2) {
-//                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
-//                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//            }
-//        }
-//        List<WebElement> carFromSingleLocationButton = driver.findElements(By.cssSelector(".red-box .button"));
-//        carFromSingleLocationButton.get(2).click(); //Complete search
+        List<WebElement> options = driver.findElements(By.cssSelector(".select-block"));
+        for (int i = 0; i < options.size(); i++) {
+            WebElement elem = options.get(i);
+            elem.click();
+            if (i == 0) {
+                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
+                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            }
+            if (i == 1) {
+                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
+                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            }
+            if (i == 2) {
+                elem.findElement(By.cssSelector(".option-sub-container > div:first-child")).click();
+                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            }
+        }
+        List<WebElement> carFromSingleLocationButton = driver.findElements(By.cssSelector(".red-box .button"));
+        carFromSingleLocationButton.get(2).click(); //Complete search
 
         try {
             System.out.println("Inventory Search Title Test");
@@ -103,7 +104,7 @@ public class HomePage {
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Inventory Search page did not load, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         //Checking for the Thank you box that shows after a search is completed
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.className("padding-10"))));
@@ -111,11 +112,11 @@ public class HomePage {
             System.out.println("Inventory Lookup Test");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println(ANSI_GREEN + "Inventory Search displayed results" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Inventory Search did not finish, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnHome();
     }
@@ -131,11 +132,11 @@ public class HomePage {
             System.out.println("Actual:    Title is " + actualTitle);
             assertEquals("Pull-A-Part Price List: Low Prices for Auto Salvage Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Left CallOut link not verified, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         returnHome();
     }

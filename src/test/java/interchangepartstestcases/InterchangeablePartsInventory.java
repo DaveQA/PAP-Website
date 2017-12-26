@@ -32,17 +32,17 @@ public class InterchangeablePartsInventory {
         try {
             System.out.println("Interchangeable Parts Search Tests");
             System.out.println("-----------------------------------------------------------------------------------");
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
             actualTitle = driver.getTitle();
             System.out.println("Expected:  Title is SEARCH INTERCHANGEABLE PARTS INVENTORY");
             System.out.println("Actual:    Title is " + actualTitle);
             assertEquals("SEARCH INTERCHANGEABLE PARTS INVENTORY", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Interchangeable Parts Search did not complete, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
         //Checking for the Thank you box that shows after a search is completed
         WebDriverWait wait = new WebDriverWait(driver, 15);
@@ -50,11 +50,11 @@ public class InterchangeablePartsInventory {
         if (driver.findElements(By.cssSelector(".results-spacer")).size() != 0) {
             System.out.println("Inventory Search completed");
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         } else {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
             System.out.println(ANSI_RED + "Inventory Search did not finish, please check the website." + ANSI_RESET);
-            System.out.println("-----------------------------------------------------------------------------------");
+            System.out.println("===================================================================================");
         }
     }
 
