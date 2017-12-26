@@ -35,7 +35,7 @@ public class PartsPricing {
             System.out.println("===================================================================================");
             actualTitle = driver.getTitle();
             System.out.println("Expected:  Pull-A-Part Price List: Low Prices for Auto Salvage Parts");
-            System.out.println("Actual:    Title is " + actualTitle);
+            System.out.println("Actual:    " + actualTitle);
             Assertions.assertEquals("Pull-A-Part Price List: Low Prices for Auto Salvage Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");

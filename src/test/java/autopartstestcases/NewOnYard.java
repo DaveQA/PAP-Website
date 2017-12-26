@@ -228,7 +228,7 @@ public class NewOnYard {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Parts Interchange Link");
-            System.out.println("Expected:  Interchangeable Car Parts: Auto Parts Interchange Database Lookup");
+            System.out.println("Expected:  SEARCH INTERCHANGEABLE PARTS INVENTORY");
             System.out.println("Actual:    " + actualTitle);
             assertEquals("SEARCH INTERCHANGEABLE PARTS INVENTORY", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
