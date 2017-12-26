@@ -43,7 +43,7 @@ public class SiteMap {
         {
             driver.navigate().to(links[i]);
             Thread.sleep(1000);
-            if(driver.getPageSource().contains("TEST")){
+            if(driver.getPageSource().contains("TEST") ||driver.getPageSource().contains(" test ")){
                 System.out.println(ANSI_RED + "Page contains test data, please check the site" + ANSI_RESET);
                 System.out.println(ANSI_RED + driver.getCurrentUrl() + ANSI_RESET);
             }

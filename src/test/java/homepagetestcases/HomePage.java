@@ -59,7 +59,7 @@ public class HomePage {
     }
 
     private void completeInventorySearch() {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
 
 //        List<WebElement> makeDropDown = driver.findElements(By.cssSelector(".red-box input"));
 //        makeDropDown.get(1).click();

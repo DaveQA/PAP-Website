@@ -145,7 +145,7 @@ public class Footer {
             System.out.println("Contact link in the Footer");
             System.out.println("Expected:  SellMyCarFAQ Category");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("SellMyCarFAQ Category", actualTitle);
+            assertEquals("FAQ Category", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {

@@ -51,7 +51,7 @@ public class HowItWorksSellMyCar {
     }
 
     private void reviewsGetAQuoteForm() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
         List<WebElement> quoteFormInputField = driver.findElements(By.cssSelector(".quote-form input"));
         quoteFormInputField.get(0).click();
         List<WebElement> yearOption = driver.findElements(By.cssSelector(".option-container .option"));
@@ -94,7 +94,7 @@ public class HowItWorksSellMyCar {
     }
 
     private void zipCodeBoxInAreaLookUp() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
 
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".red-box .input"))));
         WebElement scrollToPoint = driver.findElement(By.cssSelector(".sub-nav"));
@@ -122,7 +122,7 @@ public class HowItWorksSellMyCar {
     }
 
     private void zipCodeBoxOutOfAreaLookUp() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
 
         WebElement scrollToPoint = driver.findElement(By.cssSelector(".sub-nav"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", scrollToPoint);

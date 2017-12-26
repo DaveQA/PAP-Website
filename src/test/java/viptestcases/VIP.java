@@ -104,10 +104,11 @@ public class VIP {
         List<WebElement> yellowButton = driver.findElements(By.cssSelector(".button"));//List of the buttons on the login screen
 
         if (driver.getCurrentUrl().contains("https://stg")) {
-            cardNumber = "1000682317";
+            cardNumber = "1000682351";
             loginVIPPassword = "password";
             System.out.println("===================================================================================");
             inputs.get(0).sendKeys(Keys.chord(Keys.CONTROL, "a"), cardNumber);
+            Thread.sleep(1000);
             inputs.get(1).sendKeys(loginVIPPassword);
             yellowButton.get(10).click();
             Thread.sleep(1000);  //Added because the wait was working.  The driver.get title was happening on the login page

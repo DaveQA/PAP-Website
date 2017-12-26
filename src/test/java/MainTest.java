@@ -102,8 +102,8 @@ public class MainTest {
         if (debug)
             System.out.println(url);
         driver.get(url);
-//        navTests.navMainTests(driver);
-////======================================================================================================================
+        navTests.navMainTests(driver);
+//======================================================================================================================
         homePageTest.homeMainTest(driver);
 //======================================================================================================================
         autoPartsActiveTests.autoPartsActiveMainTest(driver);
@@ -140,8 +140,8 @@ public class MainTest {
         footerTests.footerMainTest(driver);
         socialMediaTest.socialMediaLinksTest(driver);
         siteMapTests.sitMapMainTest(driver);
-////======================================================================================================================
-//        returnHome(driver);
+//======================================================================================================================
+        returnHome(driver);
     }
 
     private void returnHome(WebDriver driver1) {

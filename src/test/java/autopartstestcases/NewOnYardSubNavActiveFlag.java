@@ -23,11 +23,6 @@ public class NewOnYardSubNavActiveFlag {
     }
 
     private void autoPartsSubNavActiveLink() {
-
-        List<WebElement> autoParts = driver.findElements(By.cssSelector(".nav a"));
-        Actions action = new Actions(driver);
-        action.moveToElement(autoParts.get(0)).moveToElement(autoParts.get(2)).click().build().perform();
-
         List<WebElement> subNavLinks = driver.findElements(By.cssSelector(".sub-nav a"));
         subNavLinks.get(0).click();
         List<WebElement> autoPartsLink = driver.findElements(By.cssSelector(".sub-nav a"));
@@ -60,6 +55,9 @@ public class NewOnYardSubNavActiveFlag {
 
     private void newOnYardSubNavActiveLink(WebDriver driver1) {
         driver = driver1;
+        List<WebElement> autoParts = driver.findElements(By.cssSelector(".nav a"));
+        Actions action = new Actions(driver);
+        action.moveToElement(autoParts.get(0)).moveToElement(autoParts.get(2)).click().build().perform();
         List<WebElement> subNavLinks = driver.findElements(By.cssSelector(".sub-nav a"));
 
         subNavLinks.get(2).click();
