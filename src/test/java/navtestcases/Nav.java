@@ -480,9 +480,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Birmingham DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Un-Junkyard: Used Auto Parts in Birmingham");
+            System.out.println("Expected:  Pull-A-Part Used Auto Parts Un-Junkyard & Auto Salvage in Birmingham");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Un-Junkyard: Used Auto Parts in Birmingham", actualTitle);
+            assertEquals("Pull-A-Part Used Auto Parts Un-Junkyard & Auto Salvage in Birmingham", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -500,9 +500,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Mobile DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Used Auto Parts, Salvage & Un-Junkyard in Mobile");
+            System.out.println("Expected:  Pull-A-Part Mobile Auto Salvage Yard & Used Auto Parts Un-Junkyard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Used Auto Parts, Salvage & Un-Junkyard in Mobile", actualTitle);
+            assertEquals("Pull-A-Part Mobile Auto Salvage Yard & Used Auto Parts Un-Junkyard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -520,9 +520,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Montgomery DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Montgomery Used Auto Parts & Salvage Yard Parts");
+            System.out.println("Expected:  Pull-A-Part Salvage Yard & Used Auto Parts Un-Junkyard in Montgomery");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Montgomery Used Auto Parts & Salvage Yard Parts", actualTitle);
+            assertEquals("Pull-A-Part Salvage Yard & Used Auto Parts Un-Junkyard in Montgomery", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -540,9 +540,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Tucson DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Auto Salvage Tucson: Un-Junkyard & Used Parts");
+            System.out.println("Expected:  Pull-A-Part Auto Salvage Tucson: Un-Junkyard & Used Auto Parts");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Auto Salvage Tucson: Un-Junkyard & Used Parts", actualTitle);
+            assertEquals("Pull-A-Part Auto Salvage Tucson: Un-Junkyard & Used Auto Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -560,9 +560,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Atlanta East DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Used Auto Parts & Salvage Yard in Lithonia");
+            System.out.println("Expected:  Pull-A-Part Lithonia Auto Salvage & Used Auto Parts Un-Junkyard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Used Auto Parts & Salvage Yard in Lithonia", actualTitle);
+            assertEquals("Pull-A-Part Lithonia Auto Salvage & Used Auto Parts Un-Junkyard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -580,9 +580,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Atlanta North DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Un-Junkyard: Norcross Used Auto Parts & Salvage");
+            System.out.println("Expected:  Pull-A-Part Used Auto Parts Un-Junkyard & Auto Salvage in Norcross");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Un-Junkyard: Norcross Used Auto Parts & Salvage", actualTitle);
+            assertEquals("Pull-A-Part Used Auto Parts Un-Junkyard & Auto Salvage in Norcross", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -600,9 +600,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Atlanta South DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Used Auto Parts: Car Parts Un-Junkyard in Atlanta");
+            System.out.println("Expected:  Pull-A-Part Atlanta: Salvage Yard & Used Auto Parts Un-Junkyard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Used Auto Parts: Car Parts Un-Junkyard in Atlanta", actualTitle);
+            assertEquals("Pull-A-Part Atlanta: Salvage Yard & Used Auto Parts Un-Junkyard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -620,9 +620,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Augusta DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Augusta Salvage Yard: Used Parts & Auto Salvage");
+            System.out.println("Expected:  Pull-A-Part Used Auto Parts Un-Junkyard & Auto Salvage in Augusta");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Augusta Salvage Yard: Used Parts & Auto Salvage", actualTitle);
+            assertEquals("Pull-A-Part Used Auto Parts Un-Junkyard & Auto Salvage in Augusta", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -640,9 +640,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Indianapolis DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Indianapolis Un-Junkyard & Used Auto Salvage Parts");
+            System.out.println("Expected:  Pull-A-Part Un-Junkyard: Used Auto Parts & Auto Salvage Indianapolis");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Indianapolis Un-Junkyard & Used Auto Salvage Parts", actualTitle);
+            assertEquals("Pull-A-Part Un-Junkyard: Used Auto Parts & Auto Salvage Indianapolis", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -680,9 +680,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Baton Rouge DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Baton Rouge Used Auto Parts & Auto Salvage Yard");
+            System.out.println("Expected:  Pull-A-Part Un-Junkyard: Used Auto Parts & Auto Salvage in Baton Rouge");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Baton Rouge Used Auto Parts & Auto Salvage Yard", actualTitle);
+            assertEquals("Pull-A-Part Un-Junkyard: Used Auto Parts & Auto Salvage in Baton Rouge", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -700,9 +700,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Lafayette DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Salvage Yard & Used Auto Parts in Lafayette");
+            System.out.println("Expected:  Pull-A-Part: Auto Salvage & Used Auto Parts Un-Junkyard in Lafayette");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Salvage Yard & Used Auto Parts in Lafayette", actualTitle);
+            assertEquals("Pull-A-Part: Auto Salvage & Used Auto Parts Un-Junkyard in Lafayette", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -720,9 +720,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("New Orleans DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Used Auto Parts & Salvage Yard in New Orleans");
+            System.out.println("Expected:  Pull-A-Part Un-Junkyard in New Orleans: Used Auto Parts & Salvage Yard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Used Auto Parts & Salvage Yard in New Orleans", actualTitle);
+            assertEquals("Pull-A-Part Un-Junkyard in New Orleans: Used Auto Parts & Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -740,9 +740,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Jackson DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Used Auto Parts & Auto Salvage Yard in Jackson");
+            System.out.println("Expected:  Pull-A-Part Jackson Un-Junkyard: Auto Salvage & Used Car Parts");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Used Auto Parts & Auto Salvage Yard in Jackson", actualTitle);
+            assertEquals("Pull-A-Part Jackson Un-Junkyard: Auto Salvage & Used Car Parts", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -760,9 +760,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Charlotte DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Auto Un-Junkyards: Charlotte Used Auto Parts");
+            System.out.println("Expected:  Pull-A-Part Un-Junkyard in Charlotte: Used Auto Parts & Salvage Yard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Auto Un-Junkyards: Charlotte Used Auto Parts", actualTitle);
+            assertEquals("Pull-A-Part Un-Junkyard in Charlotte: Used Auto Parts & Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -780,9 +780,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Winston Salem DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Un-Junkyard: Used Auto Parts & Salvage Car Parts");
+            System.out.println("Expected:  Pull-A-Part Un-Junkyard Winston-Salem: Used Auto Parts & Salvage Yard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Un-Junkyard: Used Auto Parts & Salvage Car Parts", actualTitle);
+            assertEquals("Pull-A-Part Un-Junkyard Winston-Salem: Used Auto Parts & Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -800,9 +800,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Akron DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Used Car Parts & Akron Auto Salvage Un-Junkyard");
+            System.out.println("Expected:  Pull-A-Part Akron Un-Junkyard: Used Car Parts & Auto Salvage Yard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Used Car Parts & Akron Auto Salvage Un-Junkyard", actualTitle);
+            assertEquals("Pull-A-Part Akron Un-Junkyard: Used Car Parts & Auto Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -820,9 +820,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Canton DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Un-Junkyard: Canton Auto Salvage & Used Parts");
+            System.out.println("Expected:  Pull-A-Part Canton Auto Salvage Yard & Used Car Parts Un-Junkyard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Un-Junkyard: Canton Auto Salvage & Used Parts", actualTitle);
+            assertEquals("Pull-A-Part Canton Auto Salvage Yard & Used Car Parts Un-Junkyard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -840,9 +840,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Cleveland West DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Cleveland: Used Auto Parts & Car Un-Junkyard");
+            System.out.println("Expected:  Pull-A-Part Cleveland Un-Junkyard: Used Auto Parts & Salvage Yard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Cleveland: Used Auto Parts & Car Un-Junkyard", actualTitle);
+            assertEquals("Pull-A-Part Cleveland Un-Junkyard: Used Auto Parts & Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -860,9 +860,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Columbia DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Used Auto Parts & Un-Junkyard in Columbia");
+            System.out.println("Expected:  Pull-A-Part: Columbia Auto Salvage & Used Auto Parts Un-Junkyard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Used Auto Parts & Un-Junkyard in Columbia", actualTitle);
+            assertEquals("Pull-A-Part: Columbia Auto Salvage & Used Auto Parts Un-Junkyard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -880,9 +880,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Knoxville DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Un-Junkyard: Knoxville Used Auto Salvage Parts");
+            System.out.println("Expected:  Pull-A-Part Salvage Yard & Used Auto Parts Un-Junkyard in Knoxville");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Un-Junkyard: Knoxville Used Auto Salvage Parts", actualTitle);
+            assertEquals("Pull-A-Part Salvage Yard & Used Auto Parts Un-Junkyard in Knoxville", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -900,9 +900,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Memphis DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Auto Salvage Yards: Used Auto Parts Memphis");
+            System.out.println("Expected:  Pull-A-Part Memphis Un-Junkyard: Used Auto Parts & Salvage Yard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Auto Salvage Yards: Used Auto Parts Memphis", actualTitle);
+            assertEquals("Pull-A-Part Memphis Un-Junkyard: Used Auto Parts & Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -920,9 +920,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Nashville DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Un-Junkyards: Used Auto & Car Parts Nashville");
+            System.out.println("Expected:  Pull-A-Part Nashville Un-Junkyard: Used Car Parts & Auto Salvage Yard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Un-Junkyards: Used Auto & Car Parts Nashville", actualTitle);
+            assertEquals("Pull-A-Part Nashville Un-Junkyard: Used Car Parts & Auto Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -940,9 +940,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("Corpus Christi DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part Salvage Yard & Used Auto Parts in Corpus Christi");
+            System.out.println("Expected:  Pull-A-Part Corpus Christi Un-Junkyard: Used Auto Parts & Salvage Yard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part Salvage Yard & Used Auto Parts in Corpus Christi", actualTitle);
+            assertEquals("Pull-A-Part Corpus Christi Un-Junkyard: Used Auto Parts & Salvage Yard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
@@ -960,9 +960,9 @@ public class Nav {
         try {
             actualTitle = driver.getTitle();
             System.out.println("El Paso DropDown Link in Nav");
-            System.out.println("Expected:  Pull-A-Part: El Paso Junk Car Parts & Auto Salvage Yard");
+            System.out.println("Expected:  Pull-A-Part Salvage Yard in El Paso & Used Auto Parts Un-Junkyard");
             System.out.println("Actual:    " + actualTitle);
-            assertEquals("Pull-A-Part: El Paso Junk Car Parts & Auto Salvage Yard", actualTitle);
+            assertEquals("Pull-A-Part Salvage Yard in El Paso & Used Auto Parts Un-Junkyard", actualTitle);
             System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
             System.out.println("===================================================================================");
         } catch (AssertionError e) {

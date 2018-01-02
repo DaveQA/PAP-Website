@@ -108,7 +108,7 @@ public class MainTest {
         if (debug)
             System.out.println(url);
         driver.get(url);
-//        navTests.navMainTests(driver);
+        navTests.navMainTests(driver);
 ////======================================================================================================================
 //        homePageTest.homeMainTest(driver);
 ////======================================================================================================================
@@ -141,7 +141,7 @@ public class MainTest {
 //        usedCarTest.usedCarMainTest(driver);
 //        usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
 //======================================================================================================================
-        vipTest.vipMainTest(driver);
+//        vipTest.vipMainTest(driver);
 //======================================================================================================================
 //        footerTests.footerMainTest(driver);
 //        socialMediaTest.socialMediaLinksTest(driver);
