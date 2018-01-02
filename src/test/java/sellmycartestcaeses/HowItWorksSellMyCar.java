@@ -94,13 +94,14 @@ public class HowItWorksSellMyCar {
     }
 
     private void zipCodeBoxInAreaLookUp() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
 
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".red-box .input"))));
         WebElement scrollToPoint = driver.findElement(By.cssSelector(".sub-nav"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", scrollToPoint);
 
         List<WebElement> inputField = driver.findElements(By.cssSelector(".red-box .input"));
+        wait.until(ExpectedConditions.elementToBeClickable(inputField.get(0)));
         wait.until(ExpectedConditions.elementToBeClickable(inputField.get(0)));
         inputField.get(0).click();
         driver.findElement(By.cssSelector(".red-box .input")).sendKeys("30360");

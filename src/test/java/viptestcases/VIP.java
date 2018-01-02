@@ -68,38 +68,48 @@ public class VIP {
         boolean modal;
         WebDriverWait wait = new WebDriverWait(driver, 10);
         List<WebElement> inputs = driver.findElements(By.cssSelector(".vip-form .input"));//List of the input fields on the login screen
-        List<WebElement> yellowButton = driver.findElements(By.cssSelector(".button"));//List of the buttons on the login screen
 
         System.out.println("Failed Login test");//Title of Test
         inputs.get(0).sendKeys("12345678910");//Card number being used in test
         inputs.get(1).sendKeys("wrongpassword");//Password being used in test
         driver.findElement(By.cssSelector(".vip-form button")).click();//Action which is clicking the submit button
 
-        for (i = 0; i < 10; i++) {
-            modal = false;
-            if (yellowButton.get(8).isDisplayed()) {
-                modal = true;
-                Thread.sleep(1000);
-                System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
+        if(driver.findElements(By.cssSelector(".container")).size() > 0){
+            System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
                 System.out.println("===================================================================================");
                 wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".login-overlay .button"))));
                 driver.findElement(By.cssSelector(".login-overlay .button")).click();
-            } else {
-                if (i == 9) {
+        }else{
                     System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
                     System.out.println(ANSI_RED + "The failed login attempt did not work, please check the website." + ANSI_RESET);
                     System.out.println("===================================================================================");
-                }
-            }
-            if (modal) {
-                break;
-            }
         }
-        Thread.sleep(1000);
+
+//        for (i = 0; i < 10; i++) {
+//            modal = false;
+//            if (yellowButton.get(8).isDisplayed()) {
+//                modal = true;
+//                Thread.sleep(1000);
+//                System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
+//                System.out.println("===================================================================================");
+//                wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".login-overlay .button"))));
+//                driver.findElement(By.cssSelector(".login-overlay .button")).click();
+//            } else {
+//                if (i == 9) {
+//                    System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
+//                    System.out.println(ANSI_RED + "The failed login attempt did not work, please check the website." + ANSI_RESET);
+//                    System.out.println("===================================================================================");
+//                }
+//            }
+//            if (modal) {
+//                break;
+//            }
+//        }
+//        Thread.sleep(1000);
     }
 
     private void successfulLoginAttempt() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         List<WebElement> inputs = driver.findElements(By.cssSelector(".vip-form .input"));//List of the input fields on the login screen
         List<WebElement> yellowButton = driver.findElements(By.cssSelector(".button"));//List of the buttons on the login screen
 
@@ -112,7 +122,7 @@ public class VIP {
             inputs.get(1).sendKeys(loginVIPPassword);
             wait.until(ExpectedConditions.elementToBeClickable(yellowButton.get(10)));
             yellowButton.get(10).click();
-            Thread.sleep(1000);  //Added because the wait was working.  The driver.get title was happening on the login page
+            Thread.sleep(1000);  //The driver.get title was happening on the login page
 
         } else if (driver.getCurrentUrl().contains("https://uat")) {
             cardNumber = "000412182";
@@ -206,14 +216,17 @@ public class VIP {
         WebDriverWait wait = new WebDriverWait(driver, 10);
 
         List<WebElement> profileButtons = driver.findElements(By.cssSelector(".mobile-padder-10 a"));
+        wait.until(ExpectedConditions.elementToBeClickable(profileButtons.get(0)));
         profileButtons.get(0).click();
 
-        List<WebElement> buttons = driver.findElements(By.cssSelector(".button"));
-        buttons.get(8).click();
+        List<WebElement> buttons = driver.findElements(By.cssSelector(".row .button"));
+        wait.until(ExpectedConditions.elementToBeClickable(profileButtons.get(1)));
+        buttons.get(1).click();
 
         List<WebElement> newInput = driver.findElements(By.cssSelector(".input"));//List of input fields on the VIP edit profile form in edit mode
         String vipInfoResult = vipInfo();
         newInput.get(15).sendKeys(Keys.chord(Keys.CONTROL, "a"), vipInfoResult);
+        wait.until(ExpectedConditions.elementToBeClickable(profileButtons.get(9)));
         buttons.get(9).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(buttons.get(8)));
