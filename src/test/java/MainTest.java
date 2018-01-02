@@ -143,11 +143,11 @@ public class MainTest {
 //======================================================================================================================
         vipTest.vipMainTest(driver);
 //======================================================================================================================
-        footerTests.footerMainTest(driver);
-        socialMediaTest.socialMediaLinksTest(driver);
-        siteMapTests.sitMapMainTest(driver);
-//======================================================================================================================
-        returnHome(driver);
+//        footerTests.footerMainTest(driver);
+//        socialMediaTest.socialMediaLinksTest(driver);
+//        siteMapTests.sitMapMainTest(driver);
+////======================================================================================================================
+//        returnHome(driver);
     }
 
     private void returnHome(WebDriver driver1) throws InterruptedException {

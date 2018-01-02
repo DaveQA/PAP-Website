@@ -63,9 +63,7 @@ public class VIP {
         }
     }
 
-    private void failedLoginAttempt() throws InterruptedException {
-        int i;
-        boolean modal;
+    private void failedLoginAttempt(){
         WebDriverWait wait = new WebDriverWait(driver, 10);
         List<WebElement> inputs = driver.findElements(By.cssSelector(".vip-form .input"));//List of the input fields on the login screen
 
@@ -84,28 +82,6 @@ public class VIP {
                     System.out.println(ANSI_RED + "The failed login attempt did not work, please check the website." + ANSI_RESET);
                     System.out.println("===================================================================================");
         }
-
-//        for (i = 0; i < 10; i++) {
-//            modal = false;
-//            if (yellowButton.get(8).isDisplayed()) {
-//                modal = true;
-//                Thread.sleep(1000);
-//                System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
-//                System.out.println("===================================================================================");
-//                wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".login-overlay .button"))));
-//                driver.findElement(By.cssSelector(".login-overlay .button")).click();
-//            } else {
-//                if (i == 9) {
-//                    System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
-//                    System.out.println(ANSI_RED + "The failed login attempt did not work, please check the website." + ANSI_RESET);
-//                    System.out.println("===================================================================================");
-//                }
-//            }
-//            if (modal) {
-//                break;
-//            }
-//        }
-//        Thread.sleep(1000);
     }
 
     private void successfulLoginAttempt() throws InterruptedException {
@@ -219,17 +195,17 @@ public class VIP {
         wait.until(ExpectedConditions.elementToBeClickable(profileButtons.get(0)));
         profileButtons.get(0).click();
 
-        List<WebElement> buttons = driver.findElements(By.cssSelector(".row .button"));
-        wait.until(ExpectedConditions.elementToBeClickable(profileButtons.get(1)));
+        List<WebElement> buttons = driver.findElements(By.cssSelector(".row .button"));//Edit Button before the Profile form is opened
+        wait.until(ExpectedConditions.elementToBeClickable(buttons.get(1)));
         buttons.get(1).click();
 
         List<WebElement> newInput = driver.findElements(By.cssSelector(".input"));//List of input fields on the VIP edit profile form in edit mode
         String vipInfoResult = vipInfo();
         newInput.get(15).sendKeys(Keys.chord(Keys.CONTROL, "a"), vipInfoResult);
-        wait.until(ExpectedConditions.elementToBeClickable(profileButtons.get(9)));
-        buttons.get(9).click();
+        List<WebElement> save = driver.findElements(By.cssSelector(".row .button"));//Edit Button before the Profile form is opened
+        wait.until(ExpectedConditions.elementToBeClickable(save.get(2)));
+        save.get(2).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(buttons.get(8)));
         List<WebElement> updatedVIPInfo = driver.findElements(By.cssSelector("h5"));//List of input fields on the VIP edit profile form not in edit mode
 
         try {
@@ -239,7 +215,7 @@ public class VIP {
             System.out.println("===================================================================================");
         } catch (AssertionError e) {
             System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
-            System.out.println(ANSI_RED + "VIP info was not update, please check the website." + ANSI_RED);
+            System.out.println(ANSI_RED + "VIP info was not update, please check the website." + ANSI_RESET);
             System.out.println("===================================================================================");
         }
     }
