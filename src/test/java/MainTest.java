@@ -11,7 +11,10 @@ import homepagetestcases.HomePage;
 import interchangepartstestcases.InterchangeablePartsInventory;
 import navtestcases.Nav;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import sellmycartestcaeses.*;
 import usedcarstestcases.*;
 import viptestcases.VIP;
@@ -22,6 +25,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+import java.util.List;
 
 public class MainTest {
     private static boolean debug = true;
@@ -104,7 +109,7 @@ public class MainTest {
             System.out.println(url);
         driver.get(url);
 //        navTests.navMainTests(driver);
-////======================================================================================================================
+//======================================================================================================================
 //        homePageTest.homeMainTest(driver);
 ////======================================================================================================================
 //        autoPartsActiveTests.autoPartsActiveMainTest(driver);
@@ -136,19 +141,23 @@ public class MainTest {
 //        usedCarTest.usedCarMainTest(driver);
 //        usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
 //======================================================================================================================
-//        vipTest.vipMainTest(driver);
-////======================================================================================================================
-//        footerTests.footerMainTest(driver);
-//        socialMediaTest.socialMediaLinksTest(driver);
+        vipTest.vipMainTest(driver);
+//======================================================================================================================
+        footerTests.footerMainTest(driver);
+        socialMediaTest.socialMediaLinksTest(driver);
         siteMapTests.sitMapMainTest(driver);
 //======================================================================================================================
         returnHome(driver);
     }
 
-    private void returnHome(WebDriver driver1) {
+    private void returnHome(WebDriver driver1) throws InterruptedException {
         driver = driver1;
-        ((JavascriptExecutor) driver).executeScript("javascript: setTimeout(\"history.go(-1)\", 2000)");
-        driver.findElement(By.className("logo")).click();
+        WebDriverWait wait = new WebDriverWait(driver,30);
+        ((JavascriptExecutor) driver).executeScript("javascript: setTimeout(\"history.go(-1)\", 1000)");
+        Thread.sleep(1000);
+        List<WebElement> logo = driver.findElements(By.cssSelector("img"));
+        wait.until(ExpectedConditions.elementToBeClickable(logo.get(0)));
+        logo.get(0).click();
     }
 
     @AfterClass

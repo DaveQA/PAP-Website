@@ -110,6 +110,7 @@ public class VIP {
             inputs.get(0).sendKeys(Keys.chord(Keys.CONTROL, "a"), cardNumber);
             Thread.sleep(1000);
             inputs.get(1).sendKeys(loginVIPPassword);
+            wait.until(ExpectedConditions.elementToBeClickable(yellowButton.get(10)));
             yellowButton.get(10).click();
             Thread.sleep(1000);  //Added because the wait was working.  The driver.get title was happening on the login page
 

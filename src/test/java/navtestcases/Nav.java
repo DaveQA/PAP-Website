@@ -431,7 +431,7 @@ public class Nav {
 
     private void navVideo() {
         List<WebElement> videoNavLink = driver.findElements(By.cssSelector(".nav > div"));
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
 
         videoNavLink.get(3).click();
         try {
@@ -451,9 +451,11 @@ public class Nav {
         wait.until(ExpectedConditions.elementToBeClickable(findAStoreNavLink.get(4)));
     }
 
-    private void navFindAStore() {
+    private void navFindAStore() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         List<WebElement> findAStoreNavLink = driver.findElements(By.cssSelector(".nav > div"));
-
+        wait.until(ExpectedConditions.elementToBeClickable(findAStoreNavLink.get(4)));
+        Thread.sleep(1000);
         findAStoreNavLink.get(4).click();
         try {
             actualTitle = driver.getTitle();
