@@ -136,7 +136,7 @@ public class MainTest {
 ////        inventoryTest.searchInventoryMainTest(driver);
 ////======================================================================================================================
 //        findAStoreTest.findAStoreMainTest(driver);
-        locationLinksTest.findAStoreLocationPageLinksMainTest(driver);
+//        locationLinksTest.findAStoreLocationPageLinksMainTest(driver);
 ////======================================================================================================================
 //        usedCarTest.usedCarMainTest(driver);
 //        usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
