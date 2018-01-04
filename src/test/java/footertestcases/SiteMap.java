@@ -41,7 +41,7 @@ public class SiteMap {
         System.out.println("Checking site for testing data...");
         for (int i = 0; i < linksCount; i++) {
             driver.navigate().to(links[i]);
-            Thread.sleep(1000);
+            Thread.sleep(800);
             if (driver.getPageSource().contains("TEST") || driver.getPageSource().contains(" test ")
                     || driver.getPageSource().contains(" Test")
                     || driver.getPageSource().contains(" Test")) {
