@@ -321,8 +321,8 @@ public class VIP {
     private String vipInfo() {
         String[] randomVIPInfo;
         randomVIPInfo = new String[5];
-        randomVIPInfo[0] = "WEBTEST1@PULLAPART.COM";
-        randomVIPInfo[1] = "WEBTEST2@PULLAPART.COM";
+        randomVIPInfo[0] = "automatedpapwebtest@gmail.com";
+        randomVIPInfo[1] = "automatedpapwebtest2@gmail.com";
         randomVIPInfo[2] = "WEBTEST3@PULLAPART.COM";
         randomVIPInfo[3] = "WEBTEST4@PULLAPART.COM";
         randomVIPInfo[4] = "WEBTEST5@PULLAPART.COM";

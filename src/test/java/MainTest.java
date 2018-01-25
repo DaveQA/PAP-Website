@@ -125,26 +125,26 @@ public class MainTest {
 //        notifyMeTest.notifyMePageMainTest(driver);
 ////======================================================================================================================
 //        sellMyCarTest.sellMyCarMainTest(driver);
-//        howItWorksSMC.HowItWorksSellMyCarMainTest(driver);
-//        reviewsSMC.reviewsMainTest(driver);
-//        faqSMC.sellMyCarFAQMainTest(driver);
-//        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
-//        getAQuoteSMC.getAQuotePageMainTest(driver);
-//        smcLocationTest.smcLocationPagesMainTest(driver);
-//        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
-////======================================================================================================================
-////        inventoryTest.searchInventoryMainTest(driver);
-////======================================================================================================================
-//        findAStoreTest.findAStoreMainTest(driver);
-//        locationLinksTest.findAStoreLocationPageLinksMainTest(driver);
-////======================================================================================================================
-//        usedCarTest.usedCarMainTest(driver);
-//        usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
-////======================================================================================================================
-////        vipTest.vipMainTest(driver);
-////======================================================================================================================
-//        footerTests.footerMainTest(driver);
-//        socialMediaTest.socialMediaLinksTest(driver);
+        howItWorksSMC.HowItWorksSellMyCarMainTest(driver);
+        reviewsSMC.reviewsMainTest(driver);
+        faqSMC.sellMyCarFAQMainTest(driver);
+        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
+        getAQuoteSMC.getAQuotePageMainTest(driver);
+        smcLocationTest.smcLocationPagesMainTest(driver);
+        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
+//======================================================================================================================
+//        inventoryTest.searchInventoryMainTest(driver);
+//======================================================================================================================
+        findAStoreTest.findAStoreMainTest(driver);
+        locationLinksTest.findAStoreLocationPageLinksMainTest(driver);
+//======================================================================================================================
+        usedCarTest.usedCarMainTest(driver);
+        usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
+//======================================================================================================================
+        vipTest.vipMainTest(driver);
+//======================================================================================================================
+        footerTests.footerMainTest(driver);
+        socialMediaTest.socialMediaLinksTest(driver);
         siteMapTests.sitMapMainTest(driver);
 ////======================================================================================================================
 //        returnHome(driver);
