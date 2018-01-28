@@ -9,6 +9,7 @@ import org.openqa.selenium.*;
 import java.util.List;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class VIP {
@@ -28,16 +29,17 @@ public class VIP {
     public void vipMainTest(WebDriver driver1) throws InterruptedException {
         driver = driver1;
         landingPageVIP(driver1);
-        failedLoginAttempt();
-        successfulLoginAttempt();
-        vipNavLinks(driver1);
-        vipEditProfile();
-        changeStoreVIP();
-        vipClubLinkActiveFlag();
-        vipWalletLinkActiveFlag();
-        shoppingListLinkActiveFlag();
-        messageCenterLinkActiveFlag();
-        signOutVIP();
+//        failedLoginAttempt();
+//        successfulLoginAttempt();
+//        vipNavLinks(driver1);
+//        vipEditProfile();
+//        changeStoreVIP();
+//        vipClubLinkActiveFlag();
+//        vipWalletLinkActiveFlag();
+//        shoppingListLinkActiveFlag();
+//        messageCenterLinkActiveFlag();
+//        signOutVIP();
+        lostPassWord();
     }
 
     private void landingPageVIP(WebDriver driver1) {
@@ -189,7 +191,7 @@ public class VIP {
     }
 
     private void vipEditProfile() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
 
         List<WebElement> profileButtons = driver.findElements(By.cssSelector(".mobile-padder-10 a"));
         wait.until(ExpectedConditions.elementToBeClickable(profileButtons.get(0)));
@@ -295,8 +297,8 @@ public class VIP {
     private void messageCenterLinkActiveFlag() {
         List<WebElement> subNavLinks = driver.findElements(By.cssSelector(".sub-nav a"));//List of links in the viptestcases.VIP sub-nav
         subNavLinks.get(3).click();
-        List<WebElement> messageCentertLink = driver.findElements(By.cssSelector(".sub-nav a"));//List of links in the viptestcases.VIP sub-nav
-        if (messageCentertLink.get(3).getAttribute("class").contains("active")) {
+        List<WebElement> messageContentLink = driver.findElements(By.cssSelector(".sub-nav a"));//List of links in the viptestcases.VIP sub-nav
+        if (messageContentLink.get(3).getAttribute("class").contains("active")) {
             System.out.println("Message Center link is active.");
             System.out.println(ANSI_GREEN + "Test Passed." + ANSI_RESET);
             System.out.println("===================================================================================");
@@ -316,6 +318,27 @@ public class VIP {
 
         List<WebElement> profileButtons = driver.findElements(By.cssSelector(".mobile-padder-10 a"));
         profileButtons.get(1).click();
+    }
+
+    private void lostPassWord(){
+        List<WebElement> lostPasswordButton = driver.findElements(By.cssSelector(".red-box a"));
+        WebDriverWait wait = new WebDriverWait(driver,30);
+        wait.until(ExpectedConditions.elementToBeClickable(lostPasswordButton.get(2)));
+        lostPasswordButton.get(2).click();
+        List<WebElement> cardNumberField = driver.findElements(By.cssSelector(".red-box .input"));
+        cardNumberField.get(0).sendKeys("1000682417");
+        List<WebElement> resetButton = driver.findElements(By.cssSelector(".red-box .button"));
+        resetButton.get(0).click();
+
+        List<WebElement> successfulResetMessage = driver.findElements(By.cssSelector(".red-box #ErrorMessage"));
+        wait.until(ExpectedConditions.textToBePresentInElement(successfulResetMessage.get(0),"Great! Please check your email"));
+        if(successfulResetMessage.get(0).getAttribute("innerHTML").contains("Great! Please check your email")){
+           System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
+           System.out.println(ANSI_GREEN + "Check email to confirm Reset Email was sent out" + ANSI_RESET);
+        }else{
+            System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
+            System.out.println(ANSI_RED + "Sent email message was not displayed, please check the website" + ANSI_RESET);
+        }
     }
 
     private String vipInfo() {
