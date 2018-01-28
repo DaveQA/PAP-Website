@@ -29,16 +29,16 @@ public class VIP {
     public void vipMainTest(WebDriver driver1) throws InterruptedException {
         driver = driver1;
         landingPageVIP(driver1);
-//        failedLoginAttempt();
-//        successfulLoginAttempt();
-//        vipNavLinks(driver1);
-//        vipEditProfile();
-//        changeStoreVIP();
-//        vipClubLinkActiveFlag();
-//        vipWalletLinkActiveFlag();
-//        shoppingListLinkActiveFlag();
-//        messageCenterLinkActiveFlag();
-//        signOutVIP();
+        failedLoginAttempt();
+        successfulLoginAttempt();
+        vipNavLinks(driver1);
+        vipEditProfile();
+        changeStoreVIP();
+        vipClubLinkActiveFlag();
+        vipWalletLinkActiveFlag();
+        shoppingListLinkActiveFlag();
+        messageCenterLinkActiveFlag();
+        signOutVIP();
         lostPassWord();
     }
 
