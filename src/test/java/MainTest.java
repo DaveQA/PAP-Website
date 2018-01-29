@@ -137,11 +137,11 @@ public class MainTest {
 ////======================================================================================================================
 //        findAStoreTest.findAStoreMainTest(driver);
 //        locationLinksTest.findAStoreLocationPageLinksMainTest(driver);
-////======================================================================================================================
+//======================================================================================================================
 //        usedCarTest.usedCarMainTest(driver);
-//        usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
-////======================================================================================================================
-        vipTest.vipMainTest(driver);
+        usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
+//======================================================================================================================
+//        vipTest.vipMainTest(driver);
 ////======================================================================================================================
 //        footerTests.footerMainTest(driver);
 //        socialMediaTest.socialMediaLinksTest(driver);

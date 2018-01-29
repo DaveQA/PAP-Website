@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +22,9 @@ public class UsedCarLocationPages {
 
     public void usedCarLocationPagesMainTest(WebDriver driver1) throws InterruptedException {
         akronUsedCarLocationPageSubNavActive(driver1);
-        akronUsedCarListingPageTitleCheck();
-        visitTheAkronStore();
+//        akronUsedCarListingPageTitleCheck();
+//        visitTheAkronStore();
+        letUsReachOutToYouForm();
     }
 
     private void akronUsedCarLocationPageSubNavActive(WebDriver driver1) {
@@ -98,6 +101,31 @@ public class UsedCarLocationPages {
         }
         driver.close();
         driver.switchTo().window(browserTabs.get(0));
+    }
+
+    private void letUsReachOutToYouForm(){
+        WebDriverWait wait = new WebDriverWait(driver,30);
+        WebElement scrollToPointUsedCarLetUsReachOutForm = driver.findElement(By.cssSelector(".used-cars-contact"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", scrollToPointUsedCarLetUsReachOutForm);
+
+        List<WebElement> usedCarContactFormNameField = driver.findElements(By.cssSelector(".used-cars-contact .input"));
+        usedCarContactFormNameField.get(0).sendKeys("QA Test");
+        List<WebElement> usedCarContactFormPhoneNumberField = driver.findElements(By.cssSelector(".used-cars-contact .input"));
+        usedCarContactFormPhoneNumberField.get(1).sendKeys("5555555555");
+        List<WebElement> usedCarContactFormEmailField = driver.findElements(By.cssSelector(".used-cars-contact .input"));
+        usedCarContactFormEmailField.get(2).sendKeys("QA@pullapart.com");
+        List<WebElement> usedCarContactFormSubmitButton = driver.findElements(By.cssSelector(".used-cars-contact .button"));
+        wait.until(ExpectedConditions.elementToBeClickable(usedCarContactFormSubmitButton.get(0)));
+        usedCarContactFormSubmitButton.get(0).click();
+
+        List<WebElement> reachOutForm = driver.findElements(By.cssSelector(".used-cars-contact h2"));
+        if(reachOutForm.get(1).getText().contains("THANK YOU!")){
+            System.out.println(ANSI_GREEN + "Test Passed" + ANSI_RESET);
+            System.out.println(ANSI_GREEN + "Please check the QA email for the email" + ANSI_RESET);
+        }else{
+            System.out.println(ANSI_RED + "Test Failed" + ANSI_RESET);
+            System.out.println(ANSI_RED + "Let Us Reach Out form was not completed, please check the website" + ANSI_RESET);
+        }
     }
 
     private void scrollToPoint() {
