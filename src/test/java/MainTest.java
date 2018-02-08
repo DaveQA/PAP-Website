@@ -13,6 +13,7 @@ import navtestcases.Nav;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import sellmycartestcaeses.*;
@@ -40,15 +41,19 @@ public class MainTest {
     @BeforeClass
     public static void Browser() {
 
-//PC driver setup
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dholliday\\Desktop\\Everything Selenium\\SeleniumDrivers\\ChromeDrivers\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
-        driver = new ChromeDriver(options);
+////PC driver setup
+//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dholliday\\Desktop\\Everything Selenium\\SeleniumDrivers\\ChromeDrivers\\chromedriver.exe");
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--start-maximized");
+//        driver = new ChromeDriver(options);
 ////Firefox driver setup
 //        System.setProperty("wedriver.gecko.driver","C:\\Users\\dholliday\\Desktop\\Everything Selenium\\SeleniumDrivers\\FireFoxDrivers\\geckodriver.exe\"");
 //        WebDriver driver = new FirefoxDriver();
 //        driver = new FirefoxDriver();
+//IE driver setup
+        System.setProperty("webdriver.ie.driver", "C:\\Users\\dholliday\\Desktop\\Everything Selenium\\SeleniumDrivers\\IEDrivers\\IEDriverServer.exe");
+        driver = new InternetExplorerDriver();
+        driver.manage().window().maximize();
 ////Mac driver setup
 //        System.setProperty("webdriver.chrome.driver", "/Users/davidholliday1/Desktop/Test Case/chromedriver");
 //        ChromeOptions options = new ChromeOptions();
@@ -57,7 +62,6 @@ public class MainTest {
     }
 
     @Test
-
     public void WebsiteTest() throws InterruptedException {
         Nav navTests = new Nav();
 //======================================================================================================================
@@ -108,45 +112,45 @@ public class MainTest {
         if (debug)
             System.out.println(url);
         driver.get(url);
-//        navTests.navMainTests(driver);
-////======================================================================================================================
-//        homePageTest.homeMainTest(driver);
-////======================================================================================================================
-//        autoPartsActiveTests.autoPartsActiveMainTest(driver);
-//        autoPartsTest.autoPartMainTest(driver);
-//        howItWorksActiveTests.howItWorksActiveMainTest(driver);
-//        howItWorksTest.howItWorksMainTest(driver);
-//        newOnYardTest.SearchNewOnYardMainTest(driver);
-//        newOnYardActiveTests.newOnYardActiveMainTest(driver);
-//        searchCarInventoryTest.searchInventoryMainTest(driver);
-//        searchCarInventoryActiveTests.notifyMeActiveMainTest(driver);
-//        interchangeableSearchTests.interchangeablePartsInventoryMainTests(driver);
-//        partsPricingTest.partsPricingMainTest(driver);
-//        notifyMeTest.notifyMePageMainTest(driver);
-////======================================================================================================================
-//        sellMyCarTest.sellMyCarMainTest(driver);
-//        howItWorksSMC.HowItWorksSellMyCarMainTest(driver);
-//        reviewsSMC.reviewsMainTest(driver);
-//        faqSMC.sellMyCarFAQMainTest(driver);
-//        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
-//        getAQuoteSMC.getAQuotePageMainTest(driver);
-//        smcLocationTest.smcLocationPagesMainTest(driver);
-//        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
-////======================================================================================================================
-////        inventoryTest.searchInventoryMainTest(driver);
-////======================================================================================================================
-//        findAStoreTest.findAStoreMainTest(driver);
-//        locationLinksTest.findAStoreLocationPageLinksMainTest(driver);
+        navTests.navMainTests(driver);
 //======================================================================================================================
-//        usedCarTest.usedCarMainTest(driver);
+        homePageTest.homeMainTest(driver);
+//======================================================================================================================
+        autoPartsActiveTests.autoPartsActiveMainTest(driver);
+        autoPartsTest.autoPartMainTest(driver);
+        howItWorksActiveTests.howItWorksActiveMainTest(driver);
+        howItWorksTest.howItWorksMainTest(driver);
+        newOnYardTest.SearchNewOnYardMainTest(driver);
+        newOnYardActiveTests.newOnYardActiveMainTest(driver);
+        searchCarInventoryTest.searchInventoryMainTest(driver);
+        searchCarInventoryActiveTests.notifyMeActiveMainTest(driver);
+        interchangeableSearchTests.interchangeablePartsInventoryMainTests(driver);
+        partsPricingTest.partsPricingMainTest(driver);
+        notifyMeTest.notifyMePageMainTest(driver);
+//======================================================================================================================
+        sellMyCarTest.sellMyCarMainTest(driver);
+        howItWorksSMC.HowItWorksSellMyCarMainTest(driver);
+        reviewsSMC.reviewsMainTest(driver);
+        faqSMC.sellMyCarFAQMainTest(driver);
+        sellingTipsSMC.sellMyCarSellingTipsMainTest(driver);
+        getAQuoteSMC.getAQuotePageMainTest(driver);
+        smcLocationTest.smcLocationPagesMainTest(driver);
+        smcPopularMakesTest.SMCPopularMakesMainTest(driver);
+//======================================================================================================================
+//        inventoryTest.searchInventoryMainTest(driver);
+//======================================================================================================================
+        findAStoreTest.findAStoreMainTest(driver);
+        locationLinksTest.findAStoreLocationPageLinksMainTest(driver);
+//======================================================================================================================
+        usedCarTest.usedCarMainTest(driver);
         usedCarLocationPageTest.usedCarLocationPagesMainTest(driver);
 //======================================================================================================================
-//        vipTest.vipMainTest(driver);
-////======================================================================================================================
-//        footerTests.footerMainTest(driver);
-//        socialMediaTest.socialMediaLinksTest(driver);
-//        siteMapTests.sitMapMainTest(driver);
-////======================================================================================================================
+        vipTest.vipMainTest(driver);
+//======================================================================================================================
+        footerTests.footerMainTest(driver);
+        socialMediaTest.socialMediaLinksTest(driver);
+        siteMapTests.sitMapMainTest(driver);
+//======================================================================================================================
 //        returnHome(driver);
     }
 
