@@ -14,6 +14,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import sellmycartestcaeses.*;
@@ -54,6 +55,14 @@ public class MainTest {
         System.setProperty("webdriver.ie.driver", "C:\\Users\\dholliday\\Desktop\\Everything Selenium\\SeleniumDrivers\\IEDrivers\\IEDriverServer.exe");
         driver = new InternetExplorerDriver();
         driver.manage().window().maximize();
+        DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
+        ieCapabilities.setCapability("nativeEvents", true);
+        ieCapabilities.setCapability("unexpectedAlertBehaviour", "accept");
+        ieCapabilities.setCapability("ignoreProtectedModeSettings", true);
+        ieCapabilities.setCapability("disable-popup-blocking", true);
+        ieCapabilities.setCapability("enablePersistentHover", true);
+        ieCapabilities.setCapability("ignoreZoomSetting", true);
+
 ////Mac driver setup
 //        System.setProperty("webdriver.chrome.driver", "/Users/davidholliday1/Desktop/Test Case/chromedriver");
 //        ChromeOptions options = new ChromeOptions();
